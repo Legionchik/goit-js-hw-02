@@ -1,9 +1,9 @@
 
 function formatMessage(message, maxLength) {
     if (message.length <= maxLength) {
-        return message; // Повертаємо початковий рядок, якщо його довжина менша або дорівнює maxLength
+        return message;
     } else {
-        return message.slice(0, maxLength) + "..."; // Обрізаємо рядок до maxLength символів та додаємо трійкудільний знак
+        return message.slice(0, maxLength) + "...";
     }
 }
 
@@ -14,3 +14,7 @@ console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum
 console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+
+
+
+
